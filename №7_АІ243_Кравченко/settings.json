@@ -1,0 +1,12 @@
+{
+    "liveServer.settings.port": 5501,
+    "liveServer.settings.root": "/",
+    "liveServer.settings.CustomBrowser": "chrome",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "files.autoSave": "onFocusChange",
+    "emmet.includeLanguages": {
+        "html": "html",
+        "javascript": "javascript"
+    }
+}

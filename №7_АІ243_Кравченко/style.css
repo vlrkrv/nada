@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    background: linear-gradient(145deg, #e8e0f0 0%, #d6cce8 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.container {
+    width: 100%;
+    max-width: 560px;
+}
+
+.form-card {
+    background: white;
+    border-radius: 32px;
+    padding: 40px 36px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e9e0f0;
+}
+
+.form-header h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #2c1a4a;
+    letter-spacing: -0.3px;
+}
+
+.language-selector {
+    display: flex;
+    gap: 12px;
+    font-size: 14px;
+}
+
+.lang-active {
+    color: #7c3aed;
+    font-weight: 600;
+    border-bottom: 2px solid #7c3aed;
+    padding-bottom: 4px;
+}
+
+.lang-option {
+    color: #a78bcc;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #2c1a4a;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+input {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: 1.5px solid #e9e0f0;
+    border-radius: 16px;
+    outline: none;
+    transition: all 0.2s ease;
+    background: #ffffff;
+    font-family: inherit;
+}
+
+input:focus {
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
+}
+
+input.valid {
+    border-color: #10b981;
+    background-color: #f0fdf4;
+}
+
+input.invalid {
+    border-color: #ef4444;
+    background-color: #fef2f2;
+}
+
+.error-msg {
+    color: #ef4444;
+    font-size: 12px;
+    margin-top: 6px;
+    display: none;
+}
+
+.form-group.error .error-msg {
+    display: block;
+}
+
+.info-banner {
+    background: linear-gradient(135deg, #f5f0ff 0%, #ede8fa 100%);
+    border-radius: 20px;
+    padding: 18px 20px;
+    margin: 24px 0;
+    display: flex;
+    gap: 14px;
+    border: 1px solid #dccfe8;
+}
+
+.info-icon {
+    width: 32px;
+    height: 32px;
+    background: #7c3aed;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+ align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.info-text strong {
+    color: #2c1a4a;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.info-text p {
+    color: #6b5b8c;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    background: #7c3aed;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 8px;
+    font-family: inherit;
+}
+
+button:hover {
+    background: #6d28d9;
+    transform: scale(0.98);
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 14px;
+    color: #6b5b8c;
+}
+
+.login-link a {
+    color: #7c3aed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

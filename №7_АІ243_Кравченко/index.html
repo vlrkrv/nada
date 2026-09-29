@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-card">
+            <div class="form-header">
+                <h2>Реєстрація</h2>
+                <div class="language-selector">
+                    <span class="lang-active">Українська</span>
+                    <span class="lang-option">English</span>
+                </div>
+            </div>
+
+            <form id="registrationForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Повне ім'я пацієнта</label>
+                    <input type="text" id="name" name="name" placeholder="Іван Петренко">
+                    <div class="error-msg" id="nameError">Ім'я має містити не менше 2 символів</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Електронна адреса</label>
+                    <input type="email" id="email" name="email" placeholder="patient@medclinic.com">
+                    <div class="error-msg" id="emailError">Введіть коректну email адресу</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Номер телефону</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+38 (099) 123-45-67">
+                    <div class="error-msg" id="phoneError">Введіть номер телефону (10-15 цифр)</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="birthdate">Дата народження</label>
+                    <input type="date" id="birthdate" name="birthdate">
+                    <div class="error-msg" id="birthdateError">Оберіть дату народження</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password" placeholder="Введіть пароль">
+                    <div class="error-msg" id="passwordError">Пароль: не менше 8 символів, літери та цифри</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm_password">Підтвердження пароля</label>
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="Повторіть пароль">
+                    <div class="error-msg" id="confirmError">Паролі не співпадають</div>
+                </div>
+
+                <div class="info-banner">
+                    <div class="info-icon">ⓘ</div>
+                    <div class="info-text">
+                        <strong>Вхід в систему засвідчений</strong>
+                        <p>Ваші дані захищені згідно з медичною етикою та законодавством України</p>
+                    </div>
+                </div>
+
+                <button type="submit" id="submitBtn">Замовити пароль</button>
+                <p class="login-link">Вже маєте акаунт? <a href="#">Увійти</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
